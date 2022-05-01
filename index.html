@@ -1,0 +1,421 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0px;
+            background: linear-gradient(to left,lightblue,lightgreen);
+            
+        }
+
+        .myHeader {
+            width: 100%;
+            height: auto;
+            background: linear-gradient(to top, lightblue, rgb(2, 133, 240));
+            color: white;
+            display: block;
+            position: sticky;
+            top: 0px;
+        }
+
+        .container {
+            width: 100%;
+            display: table;
+
+        }
+
+        .container h1 {
+            vertical-align: middle;
+            display: table-cell;
+
+        }
+
+        .navigation {
+            display: flex;
+            list-style: none;
+            font-size: 12px;
+            float: right;
+
+        }
+
+        .navigation li {
+            margin: 0 10px;
+            font-size: 18px;
+            color: yellow;
+        }
+
+        .navigation a {
+            text-decoration: none;
+        }
+
+        .myHeader2 {
+            margin-top: 50px;
+            border-bottom: 1px solid;
+            padding-bottom: 5px;
+            border-width: 3px;
+
+        }
+
+        .myTable {
+            margin-top: 0px;
+
+            display: flex;
+            align-items: left;
+            justify-content: left;
+
+        }
+
+        .tableBody {
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tableRow {
+
+            width: 200px;
+            row-gap: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imgDiv {
+
+            height: 120px;
+            width: 100%;
+
+        }
+
+        .imgInnerDiv {
+            padding-top: 40px;
+            margin-left: 150px;
+            width: 300px;
+            height: auto;
+
+        }
+
+
+        #personalPic {
+            float: left;
+            width: auto;
+            height: 120px;
+        }
+
+
+        .date {
+            font-style: italic;
+            margin-right: 5px;
+            float: right;
+        }
+
+        .headIcon {
+            justify-content: space-around;
+            display: flex
+        }
+
+        .divIcon {
+
+            width: 175px;
+            height: 175px;
+            padding: 20px;
+
+        }
+
+        .divIcon i {
+            margin-left: 40%;
+
+        }
+
+        .divIcon p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .divIcon p.date {
+            font-size: 12px;
+        }
+
+        .Rating b {
+            position: absolute;
+        }
+
+        .Rating i {
+            transform: translateX(150px);
+
+        }
+
+        .project {
+
+            float: left;
+            margin: 0;
+            height: 400px;
+        }
+
+        #content {
+
+            justify-content: center;
+            display: flex;
+            width: 80%;
+            height: 400px;
+
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+        #content img {
+
+            width: 300px;
+            height: auto;
+
+        }
+
+        .project button {
+            width: 100px;
+            height: 400px;
+            margin: 0;
+        }
+
+        .myHeader3 {
+            margin-top:500px;
+            text-align: center;
+            padding-bottom: 5px;
+            border-width: 3px;
+
+        }
+
+        .footerHead i{
+            transform: translateX(580px);
+        }
+
+        .footerBtm {
+            text-align: center;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="myHeader">
+        <div class="container">
+            <h1>
+                Resume
+            </h1>
+
+            <ul class="navigation">
+                <a href="#">
+                    <li>Education</li>
+                </a>
+                <a href="#">
+                    <li>Work Experience</li>
+                </a>
+                <a href="#">
+                    <li>Skills</li>
+                </a>
+                <a href="#">
+                    <li>Project</li>
+                </a>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="imgDiv">
+
+        <img id="personalPic" src="/project(sem4)/picture/personalPic.jpg" alt="Personal Picture"
+            title="Woon Zhun Ping">
+
+        <div class="imgInnerDiv">
+            <h2> Woon Zhun Ping</h2>
+
+        </div>
+
+    </div>
+
+
+    <div>
+        <H2 class="myHeader2">Personal Details</H2>
+        <table class="myTable">
+            <tbody class="tableBody">
+                <tr class="tableRow">
+                    <th>Name</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr class="tableRow">
+                    <td>Woon Zhun Ping</td>
+                    <td>zhunping167@hotmail.com</td>
+                    <td>+60174313479</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <H2 class="myHeader2">Education</H2>
+    <b>SMK Bagan Jaya</b><span class="date">2013-2017</span>
+    <p>I am science stream SPM student and I score 6As in the SPM </p>
+    <br>
+
+    <b>SMjk Chung Ling Butterworth</b><span class="date">2018-2019</span>
+    <p>I am science stream STPM student and I take 4 subjects in STPM (Physics, Mathematics T, Chemistry and Pengajian
+        Am) </p>
+    <br>
+
+    <b>Univercity of Utara Malaysia </b><span class="date">2020-2023</span>
+    <p>I am a Information Techology student that major in Software Engineering. I learn how to develop mobile and web
+        application</p>
+
+
+    <H2 class="myHeader2">Work Experience</H2>
+    <div class="headIcon">
+        <div class="divIcon">
+            <i class="fa fa-gear fa-2x"> </i>
+            <p> Operator </p>
+            <p class="date"> December 2017 - April 2018 </p>
+        </div>
+        <div class="divIcon">
+            <i class="fa fa-gift fa-2x"></i>
+            <p>Packaging Hamper</p>
+            <p class="date"> December 2019 - January 2020 </p>
+        </div>
+        <div class="divIcon">
+
+            <i class="fa fa-pencil fa-2x"> </i>
+            <p>Worker in stationery shop</p>
+            <p class="date"> April 2020 - September 2020 </p>
+        </div>
+
+    </div>
+
+    <H2 class="myHeader2">Skills</H2>
+
+    <div class="rating">
+        <b>Java</b>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star-half"> </i>
+    </div>
+
+    <div class="rating">
+        <b>SQL</b>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+    </div>
+
+    <div class="rating">
+        <b>Javasript</b>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+    </div>
+
+    <div class="rating">
+        <b>Python</b>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star-half"> </i>
+
+    </div>
+
+    <div class="rating">
+        <b>Excel</b>
+
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+        <i class="fa fa-star"> </i>
+
+    </div>
+
+    <H2 class="myHeader2">Project</H2>
+    <div class="project"><button id="previousBtn" class="button1"> Previous</button> </div>
+    <div id="content" class="project">
+        <img id="projectPic" src="/project(sem4)/picture/project1.png">
+
+    </div>
+    <div class="project"><button id="nextBtn" , class="button2"> Next</button></div>
+
+
+    
+
+    <script>
+
+        let x = 0;
+        let imgProject = document.getElementById("projectPic")
+
+
+        document.getElementById("nextBtn").onclick = function () {
+
+            x += 1;
+            console.log(x)
+
+            if (x = 3) {
+                imgProject.src = "/project(sem4)/picture/project1.png"
+                x = 0;
+            } else if (x = 2) {
+                imgProject.src = "/project(sem4)/picture/project1.png";
+            } else {
+                imgProject.src = "/project(sem4)/picture/project2.png"
+            }
+
+
+        }
+
+        document.getElementById("previousBtn").onclick = function () {
+
+            x -= 1;
+            console.log(x)
+            if (x = 1) {
+                imgProject.src = "/project(sem4)/picture/project2.png"
+                x = 0;
+            } else if (x = -1) {
+                imgProject.src = "/project(sem4)/picture/project1.png";
+            } else if (x = 0) {
+                imgProject.src = "/project(sem4)/picture/project1.png"
+            }
+
+
+        }      
+    </script>
+
+    
+
+    <footer>
+        <div class="footerHead">
+            <h3 class="myHeader3">Contact Me</h3> 
+            
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-wechat"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            
+        
+            <div class="footerBtm">
+                <p>Copyright reserved by Woon and design by Woon </p>
+            </div>
+    </footer>
+
+
+</body>
+
+
+</html>
